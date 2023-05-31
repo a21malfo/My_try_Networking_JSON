@@ -1,7 +1,31 @@
 package com.example.my_try_networking_json;
 
 public class Mountain {
-        private String ID;
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private String ID;
         private String name;
+
+    @Override
+    public String toString() {
+        return "Mountain{" +
+                "ID='" + ID + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
 
